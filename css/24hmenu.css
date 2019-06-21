@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+i{
+	padding: 0px 10px;
+	font-size: 20px;
+	color: white;
+}
+body{
+	font-family: 'Roboto';
+	font-size: 10px;
+}
+h1 img{
+	position: absolute;
+	top: 5px;
+	left: 130px;
+}
+.menu{
+	background-color: #78b43d;
+	width: 100%;
+	min-height: 40px;
+}
+.menu ul{
+text-align: center;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 50px;
+	padding: 0px 10px;
+	position: relative;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+nav ul li:hover{
+	background-color: #609a26;
+}
+nav ul li a:hover{
+		text-decoration: underline;
+}
+nav ul li.danhmuc :hover{
+	text-decoration: none;
+}
+nav ul li.search input.timkiem{
+	display: none;
+}
+nav ul li.search{
+	border-left: 1px solid #aad862;
+	border-right: 1px solid #aad862;
+}
+nav ul li.search:hover > input.timkiem{
+	display: block;
+	position: fixed;
+	top:5px;
+	right: 275px;
+	width:800px;
+	height: 40px;
+	z-index: 1;
+}
+nav ul li.danhmuc{
+	border-left: 1px solid #aad862;
+	border-right: 1px solid #aad862;
+}
+nav ul li.danhmuc a{
+	text-decoration: none;
+}
+nav ul li ul.drop-menu{
+	display: none;
+}
+nav ul li:hover > ul.drop-menu li{
+	display: block;
+	border-bottom: 1px solid #78b43d;
+	font-size: 12px;
+	line-height: 30px;
+}
+nav ul li:hover > ul.drop-menu{
+	display: block;
+	position: absolute;
+	background-color: #aad862;
+	top: 50px;
+	left: -100px;
+	min-width: 150px;
+}
+nav ul li.danhmuc:hover > ul.drop-menu li a{
+	color: black;
+}
+nav ul li ul.drop-menu{
+	text-align: left;
+}
+nav ul li.danhmuc ul.drop-menu li:hover a{
+	color: white;
+}
+nav ul li:hover > ul.drop-menu2{
+	display: block;
+	position: absolute;
+	background-color: #78b43d;
+	top: 0px;
+	left: 150px;
+	min-width: 150px;
+}
+nav ul li.danhmuc ul.drop-menu li:hover ul li a{
+	color: black;
+}
+nav ul li.danhmuc ul.drop-menu li ul li:hover a{
+	color: white;
+}
+nav ul li.danhmuc ul.drop-menu li:hover ul li{
+	border-bottom: 1px solid #aad862;
+}
+nav ul li:hover > ul.drop-menu3{
+	display: block;
+	position: absolute;
+	background-color: #aad862;
+	top: 50px;
+	left: 0px;
+	min-width: 250px;
+}
+nav ul li:hover ul.drop-menu3 li a{
+	color: black;
+	text-decoration: none;
+}
+nav ul li ul.drop-menu3 li:hover a{
+	color: white;
+	text-decoration: none;
+}

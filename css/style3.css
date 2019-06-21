@@ -1,0 +1,43 @@
+/* Thuoc tinh dinh dang font chu, van ban */
+p{
+	font-family: 'Charm', cursive;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bolder;
+	font-size: 20px;
+	direction: ltr;
+	letter-spacing: 10px; /* tao khoang cach giua cac chu */
+	word-spacing: 20px;	/* tao khoang cach giua cac tu*/
+	text-indent: 100px; /* do thut lui cua van ban*/
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: green 3px 10px 5px;	/* toa do truc x, toa do truc y, do mo cua chu*/
+}
+/* Thuoc tinh va gia tri hinh nen */
+div.content{
+	width: 500px;
+	height: 1000px;
+/* tao mau sac */
+	background-color: lightblue;
+/* tao hinh nen */
+	background-image: url('../picture/icon_zing_mp3_60.png');
+	background-repeat: no-repeat;
+	/* background-repeat: repeat-x; */
+	/* background-repeat: repeat-y; */
+/* Dieu khien vi tri anh nen va phai dung background-repeat:no-repeat;*/
+	/* background-position: center center; */
+/* Dieu khien kich thuoc cua anh nen */
+	background-size: 100px 100px;
+	/* background-size: cover; */
+/* Dieu khien anh nen so voi vi tri thanh scroll cua trinh duyet */
+	background-attachment: fixed;
+}
+/* Duong vien trong CSS */
+div.content{
+	border-top: 10px solid blue;
+/* 	border-top-width: 20px;
+	border-top-style: groove;
+	border-top-color: red; */ 
+}
+/* Lề và vùng đệm */

@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+div.content{
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+	overflow: scroll;
+	/* overflow: hidden; */
+	/* overflow: auto; */
+	/* overflow-x: scroll; */
+	/* overflow-y: scroll; */
+}
+div.box{
+	width: 980px;
+	margin: 10px auto;
+	border: 1px solid blue;
+}
+div.box-1, div.box-2{
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+div.box-1{
+	background-color: yellow;
+}
+div.box-2{
+	background-color: green;
+}
+/* RESPONSIVE CSS */
+@media only screen and (min-width: 375px) and (max-width: 667px){
+	/* reset lai cac css da dinh nghia ben ngoai */
+	div.box-1, div.box-2{
+		width: 100%;
+		float: none;
+	}
+	div.box-1{
+		background-color: green;
+	}
+	div.box-2{
+		background-color: yellow;
+	}
+	img{
+		display: none;
+	}
+}
+.clear{
+	clear: both;
+}
+div.color{
+	width: 300px;
+	height: 300px;
+	background-color: lightcoral;
+	margin: 50px 50px;
+	background: linear-gradient(to bottom, red, purple);
+	/* background: -webkit-linear-gradient(to bottom, red, purple);
+	background: -moz-linear-gradient(to bottom, red, purple);
+	background: -ms-linear-gradient(to bottom, red, purple);
+	background: -o-linear-gradient(to bottom, red, purple);*/
+	transform: translate(100px, 300px); /*di chuyen*/
+	transform: rotate(45deg);/* quay goc - translate mat tac dung va nguoc lai*/
+	transform: scale(1, 1); /*keo gian phan tu*/
+	/* transform: -webkit- skew(30deg,45deg); */
+	/* transform: skew(30deg, 45deg); */
+	transition: all 5s linear 1s;
+	position: relative;
+	animation: myAnimation 5s linear 1s infinite alternate;
+}
+div.color:hover{
+	width: 600px;
+	height: 600px;
+	opacity: 0.5;
+}
+@keyframes myAnimation{
+	from {
+		left: 0px;
+	}
+	to {
+		left: 500px;
+	}
+}
+div.text{
+	width: 150px;
+	height: 100px;
+	border: 1px solid red;
+	white-space: nowrap;
+	margin: 0px 100px;
+}
+div.text p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+div.a {
+	width: 300px;
+	height: 200px;
+	background-color: black;
+	transform: rotate(20deg);
+}

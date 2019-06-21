@@ -1,0 +1,83 @@
+*{
+	font-size: 20px;
+}
+div.a p{
+	white-space: pre;
+}
+/* PSEUDO CLASS SELECTOR */
+div.content :first-child{
+	color: red;
+}
+div.content :first-of-type{
+	color: blue;
+}
+div.content > :last-child{
+	color: green;
+}
+div.content :last-of-type{
+	color: violet;
+}
+div.content :nth-last-child(3){
+	/* tinh tu thanng con cuoi cung dem len */
+	color: yellow;
+}
+div.content :nth-last-of-type(3){
+	color: darkgoldenrod;
+}
+div.content :nth-child(2){
+	color: orange;
+}
+div.content :nth-of-type(2){
+	color: silver;
+}
+section.box h5:first-of-type{
+	color: red;
+}
+section.onlyChild :only-child{
+	/*Chi tac dong nhung the co 1 con  */
+	color: blue;
+}
+section.form input[name='user']:focus{
+	border: 1px solid red;
+	width: 500px;
+}
+section.form input[type='checkbox']:checked{
+	width: 300px;
+	height: 300px;
+}
+section.form input[type='radio']:checked{
+	width: 300px;
+	height: 300px;
+}
+section.myLink a:active{
+	color: yellow;
+}
+section.myLink a:visited{
+	color: red;
+}
+section.myLink a:link{
+	color: green;
+}
+section.myLink a:hover{
+	color: violet;
+}
+/* PSEUDO ELEMENTS */
+div.container p::first-letter{
+	color: red;
+	font-size: 50px;
+}
+div.container p::first-line{
+	color: blue;
+}
+div.container p::before{
+	/* content: "PHP1811E"; */
+	content: url('../picture/icon_zing_mp3_60.png');
+}
+div.container p::after{
+	content: "..........Last";
+}
+div.container p::selection{
+	color: green;
+}
+div.container p{
+}

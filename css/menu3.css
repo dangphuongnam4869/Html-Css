@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family:'Roboto';
+	font-size:15px;
+	font-weight: bolder;
+}
+nav {
+	width: 100%;
+	background-color: black;
+	height: 40px;
+}
+nav > ul{
+	text-align: center;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 15px;
+	position: relative;
+}
+nav ul li a{
+	display:block;
+	text-decoration: none;
+	color: white;
+}
+nav ul li:hover{
+	background-color: purple;
+}
+nav ul li:hover a{
+	color: yellow;
+}
+/* MENU CSS */
+nav ul li div.drop-menu{
+	visibility: hidden;
+	opacity: 0;
+	background-color: black;
+	width: 500px;
+	top: 100%;
+	left: 0px;
+	transition: all 1s linear 0.5s;
+	position: absolute;
+}
+nav ul li div.drop-menu ul{
+	display: table-row;
+}
+nav ul li div.drop-menu ul li{
+	display: table-cell;
+}
+nav ul li div.drop-menu ul li a{
+	text-align: left;
+}
+nav ul li:hover div.drop-menu{
+	opacity: 1;
+	visibility: visible;
+	background-color: black;
+}
+nav ul li a{
+	text-align: left;
+}
+nav ul li div.drop-menu ul li a{
+	color: white;
+}
+nav ul li div.drop-menu ul li:hover a{
+	color: yellow;
+}

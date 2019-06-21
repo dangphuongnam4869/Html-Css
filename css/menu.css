@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* text-decoration: none; */
+}
+body{
+	font-family: 'Roboto';
+	font-size: 1em;
+}
+nav.menu ul li{
+	list-style: none;
+	padding: 10px 5px;
+	border-bottom: 1px solid red;
+	position: relative;
+}
+nav.menu ul li a{
+	text-decoration: none;
+}
+nav.menu{
+	width: 200px;
+	background-color: lightblue;
+	margin: 5px 20px;
+}
+nav.menu ul li:last-child{
+	border: none;
+}
+nav.menu ul li:hover{
+	background-color: lightpink;
+	transition: 0.4s;
+}
+nav.menu ul li:hover a{
+	color: black;
+	transition: 0.4s;
+}
+/* CSS dropdown menu */
+nav.menu ul li ul.drop-menu{
+	display: none;
+}
+nav.menu ul li:hover > ul.drop-menu{
+	display: block;
+	position: absolute;
+	background-color: lightblue;
+	width: 200px;
+	left: 200px;
+	top: 0px;
+	border-left: 1px solid red;
+}
+nav.menu ul li:hover > ul.drop-menu:first-child{
+	border-top: 1px solid red ;
+}
+/* nav.menu ul li ul.drop-menu li ul.drop-menu-iphone6{
+	display: none;
+}
+nav.menu ul li ul.drop-menu li:hover ul.drop-menu-iphone6{
+	display: block;
+	position: absolute;
+	background-color: lightblue;
+	width: 200px;
+	left: 200px;
+	top: 0px;
+	border-left: 1px solid red;
+	color: black;
+} */

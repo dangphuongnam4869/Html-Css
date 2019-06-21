@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* Margin va Padding */
+div.box, div.box2{
+	width: 300px;
+	height: 300px;
+	border: 1px solid red;
+}
+div.box{
+	/* thieu ben nao thi tu dong lay doi xung */
+	/* margin-bottom: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-right: 50px; */
+	/* margin: 50px 0px 0px 0px; */
+	/* margin: 50px 20px; */
+	/* margin: 50px 30px 10px; */
+	/* padding-bottom: 50px; */
+}
+div.box h3{
+	/* padding viet tuong tu margin */
+	/* padding-left: 50px; */
+	/* padding: 50px; */
+	/* margin-left: 50px; */
+}
+/* nen dung padding khi muon cach 1 phan tu ben trong
+ dung margin khi muon cach o ben ngoai phan tu*/
+ /* THUOC TINH DISPLAY */
+ div.box{
+ 	/* an phan tu*/
+ 	/* visibility: hidden; */
+ 	/* xoa luon vung chiem cua phan tu*/
+ 	/* display: none; */
+ }
+ div.box, div.box2{
+ 	display: inline-block;
+ }
+ div.box a{
+ 	display: list-item;
+ 	margin-left: 50px;
+ 	/* padding-left: 50px; */
+ }
+ div.content{
+ 	width: 800px;
+ 	height: 800px;
+ 	border: 1px solid blue;
+ }
+ div.content1{
+ 	width: 400px;
+ 	height: 200px;
+ 	background-color: yellow;
+ 	float: left;
+ }
+ div.content2{
+ 	width: 400px;
+ 	height: 200px;
+ 	background-color: green;
+ 	float: right;
+ }
+ div.content3{
+ 	width: 100px;
+ 	height: 200px;
+ 	background-color: aqua;
+ }
+.clear{
+	clear: both;
+	/* clear: right */
+	/* clear: left; */
+}
+/* THUOC TINH POSITION */
+img{
+	/* relative dinh vi tri tuyet doi */
+	/* position: relative;
+	top: -500px; */
+	/* absolute dinh vi tri tuong doi */
+	position: absolute;
+	top: 50px;
+}
+header{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	position: fixed;
+	z-index: 1;
+}

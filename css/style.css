@@ -1,0 +1,57 @@
+/* cu phap comment trong css */
+/* universal selector */
+/* reset trinh duyet */
+*{
+	margin: 0;
+	padding: 0;
+}
+/*thu tu duyet: id > class > html muon co do uu tien cao nhat thi can chi ra duong di ro rang cua no */
+/* html selector */
+h3{
+	color: red;
+}
+/* class selector */
+.title {
+	color: blue;
+}
+/* id selector */
+#mytitle{
+	color: green;
+}
+h3.title{
+	color: pink;
+}
+/* attribute selector */
+/* ~= phai giong 100% */
+/* ^= ten dau tien trong danh sach*/
+/* $= ten cuoi cung trong danh sach */
+/* *= chi can giong 1 ki tu */
+/* |= can phai co dau "-" "value-?" vd: "my-....."*/
+input[name="username"]{
+	border: 1px solid red;
+}
+input[class='email']{
+	border: 1px solid blue;
+}
+input[class|='my']{
+	border: 1px solid yellow;
+}
+/* cac loai selector phan cap */
+/* the p la the con truc tiep cua the div co class la box */
+div.box > p{
+	color: blue;
+}
+/* the p la the nam ben trong cua the div co class la box */
+div.box p{
+	color: purple;
+}
+div.box > h4 + p.p1{
+	color: red;
+}
+div.box-2 + div.box-3 > div.child-1 + div.child-2 > 
+div.child-4 ~ div.child-5 div.child-6 > h1.title{
+	color: pink;
+}
+div.a ~ div.c{
+	color: grey;	
+}
